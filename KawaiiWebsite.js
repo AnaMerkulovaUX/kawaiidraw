@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { Card } from '@/components/ui/card';
-import { PlayCircle, PenTool, Book, Image, ArrowLeft, Heart, ExternalLink, Cloud, Star, Sparkles, X } from 'lucide-react';
+
 
 // Decorative Components
 const FloatingElement = ({ children, delay = "0s" }) => (
