@@ -1,7 +1,7 @@
 
 <script type="text/babel">
     const { useState } = React;
-    const { playCircle, penTool, Book, Image, ArrowLeft, Heart, ExternalLink, Cloud, Star, Sparkles, X } = lucide;
+    const { PlayCircle, PenTool, Book, Image, ArrowLeft, Heart, ExternalLink, Cloud, Star, Sparkles, X } = lucide;
 
     // Simple Card component since we don't have access to shadcn
     const Card = ({ children, className = "" }) => (
@@ -86,7 +86,7 @@ const KawaiiWebsite = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
-                <playCircle className="w-8 h-8 text-pink-500" />
+                <PlayCircle className="w-8 h-8 text-pink-500" />
                 <h2 className="text-2xl font-semibold text-gray-800">Animated Kawaii in Procreate</h2>
               </div>
               <p className="text-gray-600">Watch tutorials on creating adorable animated characters!</p>
@@ -107,7 +107,7 @@ const KawaiiWebsite = () => {
 
             <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
-                <penTool className="w-8 h-8 text-green-500" />
+                <PenTool className="w-8 h-8 text-green-500" />
                 <h2 className="text-2xl font-semibold text-gray-800">Getting Started</h2>
               </div>
               <p className="text-gray-600">Everything you need to begin your kawaii art journey!</p>
