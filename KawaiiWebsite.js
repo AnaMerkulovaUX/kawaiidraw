@@ -1,7 +1,7 @@
 
 <script type="text/babel">
     const { useState } = React;
-    const { playCircle, penTool, book, image, arrowLeft, heart, externalLink, cloud, star, sparkles, x } = lucide;
+    const { playCircle, penTool, book, image, IconArrowLeft, IconHeart, IconExternal, cloud, star, sparkles, x } = lucide;
 
     // Simple Card component since we don't have access to shadcn
     const Card = ({ children, className = "" }) => (
@@ -124,7 +124,7 @@ const KawaiiWebsite = () => {
 
           <div className="flex justify-center mt-12 gap-2">
             <KawaiiSparkle />
-            <heart className="w-12 h-12 text-pink-400" fill="currentColor" />
+            <IconHeart className="w-12 h-12 text-pink-400" fill="currentColor" />
             <KawaiiSparkle />
           </div>
         </main>
@@ -185,7 +185,7 @@ const KawaiiWebsite = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-brown-200 to-brown-300 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
                 ʕ•ᴥ•ʔ
               </div>
-              <arrowLeft className="w-6 h-6" />
+              <IconArrowLeft className="w-6 h-6" />
               <span className="font-medium">Back to Main Page</span>
             </button>
           </nav>
@@ -244,7 +244,7 @@ const KawaiiWebsite = () => {
                     <p className="text-pink-100 text-sm">{item.description}</p>
                     <button className="mt-4 bg-white text-pink-600 px-4 py-2 rounded-full flex items-center gap-2 hover:bg-pink-100 transition-colors">
                       View Larger
-                      <externalLink className="w-4 h-4" />
+                      <IconExternal className="w-4 h-4" />
                     </button>
                   </div>
                 </Card>
@@ -254,7 +254,7 @@ const KawaiiWebsite = () => {
 
           <div className="flex justify-center my-12 gap-2">
             <KawaiiSparkle />
-            <heart className="w-12 h-12 text-pink-400" fill="currentColor" />
+            <IconHeart className="w-12 h-12 text-pink-400" fill="currentColor" />
             <KawaiiSparkle />
           </div>
         </div>
