@@ -18,7 +18,7 @@
     <div id="root"></div>
     <script type="text/babel">
         const { useState } = React;
-        const { playCircle, penTool, Book, Image, ArrowLeft, Heart, ExternalLink, Cloud, Star, Sparkles, X } = lucide;
+        const { playCircle, penTool, book, image, arrowLeft, heart, externalLink, cloud, star, sparkles, x } = lucide;
 
         // Simple Card component since we don't have access to shadcn
         const Card = ({ children, className = "" }) => (
@@ -34,39 +34,39 @@
             </div>
         );
 
-        const KawaiiCloud = ({ className = "" }) => (
+        const Kawaiicloud = ({ className = "" }) => (
             <div className={`text-white ${className}`}>
-                <Cloud size={40} fill="currentColor" />
+                <cloud size={40} fill="currentColor" />
             </div>
         );
 
-        const KawaiiStar = ({ className = "" }) => (
+        const Kawaiistar = ({ className = "" }) => (
             <div className={`text-yellow-300 ${className}`}>
-                <Star size={20} fill="currentColor" />
+                <star size={20} fill="currentColor" />
             </div>
         );
 
         const KawaiiSparkle = ({ className = "" }) => (
             <div className={`text-pink-400 ${className}`}>
-                <Sparkles size={16} />
+                <sparkles size={16} />
             </div>
         );
 
         const KawaiiWebsite = () => {
             const [currentPage, setCurrentPage] = useState('main');
-            const [selectedImage, setSelectedImage] = useState(null);
+            const [selectedimage, setSelectedimage] = useState(null);
 
             const MainPage = () => (
                 <div className="min-h-screen bg-gradient-to-b from-pink-50 to-blue-50 overflow-hidden">
                     <div className="fixed inset-0 pointer-events-none">
                         <FloatingElement delay="0s">
-                            <KawaiiCloud className="absolute top-20 left-[10%]" />
+                            <Kawaiicloud className="absolute top-20 left-[10%]" />
                         </FloatingElement>
                         <FloatingElement delay="0.5s">
-                            <KawaiiCloud className="absolute top-40 right-[15%]" />
+                            <Kawaiicloud className="absolute top-40 right-[15%]" />
                         </FloatingElement>
-                        <KawaiiStar className="absolute top-[15%] left-[20%]" />
-                        <KawaiiStar className="absolute top-[25%] right-[25%]" />
+                        <Kawaiistar className="absolute top-[15%] left-[20%]" />
+                        <Kawaiistar className="absolute top-[25%] right-[25%]" />
                         <KawaiiSparkle className="absolute top-[30%] left-[30%]" />
                     </div>
 
@@ -113,7 +113,7 @@
                                 >
                                     <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <Image className="w-8 h-8 text-blue-500" />
+                                            <image className="w-8 h-8 text-blue-500" />
                                             <h2 className="text-2xl font-semibold text-gray-800">My Drawings</h2>
                                         </div>
                                         <p className="text-gray-600">Check out my kawaii art gallery! ✨</p>
@@ -123,14 +123,14 @@
                                 <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                                     <div className="flex items-center gap-3 mb-4">
                                         <penTool className="w-8 h-8 text-green-500" />
-                                        <h2 className="text-2xl font-semibold text-gray-800">Getting Started</h2>
+                                        <h2 className="text-2xl font-semibold text-gray-800">Getting started</h2>
                                     </div>
                                     <p className="text-gray-600">Everything you need to begin your kawaii art journey!</p>
                                 </Card>
 
                                 <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <Book className="w-8 h-8 text-purple-500" />
+                                        <book className="w-8 h-8 text-purple-500" />
                                         <h2 className="text-2xl font-semibold text-gray-800">Step-by-Step Tutorials</h2>
                                     </div>
                                     <p className="text-gray-600">Learn to draw cute characters! (⌒‿⌒)</p>
@@ -139,7 +139,7 @@
 
                             <div className="flex justify-center mt-12 gap-2">
                                 <KawaiiSparkle />
-                                <Heart className="w-12 h-12 text-pink-400" fill="currentColor" />
+                                <heart className="w-12 h-12 text-pink-400" fill="currentColor" />
                                 <KawaiiSparkle />
                             </div>
                         </main>
@@ -165,14 +165,14 @@
                 const featuredItem = galleryItems.find(item => item.isFeatured);
                 const regularItems = galleryItems.filter(item => !item.isFeatured);
 
-                const ImageModal = ({ item, onClose }) => (
+                const imageModal = ({ item, onClose }) => (
                     <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
                         <div className="relative max-w-4xl w-full bg-white rounded-lg overflow-hidden">
                             <button
                                 onClick={onClose}
                                 className="absolute top-4 right-4 p-2 bg-white/10 rounded-full text-white hover:bg-white/20 transition-colors"
                             >
-                                <X className="w-6 h-6" />
+                                <x className="w-6 h-6" />
                             </button>
                             <div className="aspect-square w-full">
                                 <img 
@@ -200,13 +200,13 @@
                                     <div className="w-12 h-12 bg-gradient-to-br from-brown-200 to-brown-300 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
                                         ʕ•ᴥ•ʔ
                                     </div>
-                                    <ArrowLeft className="w-6 h-6" />
+                                    <arrowLeft className="w-6 h-6" />
                                     <span className="font-medium">Back to Main Page</span>
                                 </button>
                             </nav>
 
                             <header className="text-center my-8 relative">
-                                <KawaiiStar className="absolute top-0 left-1/4" />
+                                <Kawaiistar className="absolute top-0 left-1/4" />
                                 <KawaiiSparkle className="absolute top-2 right-1/4" />
                                 <h1 className="text-4xl font-bold text-pink-600 mb-4">My Kawaii Gallery ♡</h1>
                                 <p className="text-gray-600 mb-8">A collection of my cute drawings and digital art (◠‿◠✿)</p>
@@ -240,7 +240,7 @@
                                         <Card 
                                             key={item.id} 
                                             className="group relative overflow-hidden cursor-pointer transform hover:-translate-y-1 transition-all duration-300"
-                                            onClick={() => setSelectedImage(item)}
+                                            onClick={() => setSelectedimage(item)}
                                         >
                                             <div className="aspect-square bg-white p-4">
                                                 <div className="w-full h-full bg-gradient-to-br from-pink-100 to-blue-100 rounded-lg flex items-center justify-center">
@@ -257,4 +257,4 @@
                                                 <p className="text-pink-100 text-sm">{item.description}</p>
                                                 <button className="mt-4 bg-white text-pink-600 px-4 py-2 rounded-full flex items-center gap-2 hover:bg-pink-100 transition-colors">
                                                     View Larger
-                                                    <ExternalLink className="w-4 h-4" />
+                                                    <externalLink className="w-4 h-4" />
