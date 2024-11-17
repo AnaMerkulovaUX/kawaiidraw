@@ -1,4 +1,16 @@
 
+<script type="text/babel">
+    const { useState } = React;
+    const { PlayCircle, PenTool, Book, Image, ArrowLeft, Heart, ExternalLink, Cloud, Star, Sparkles, X } = lucide;
+
+    // Simple Card component since we don't have access to shadcn
+    const Card = ({ children, className = "" }) => (
+        <div className={`bg-white rounded-lg shadow-md ${className}`}>
+            {children}
+        </div>
+    );
+
+    // Rest of your code starts here...
 
 // Decorative Components
 const FloatingElement = ({ children, delay = "0s" }) => (
@@ -259,6 +271,7 @@ const KawaiiWebsite = () => {
   };
 
   return currentPage === 'main' ? <MainPage /> : <GalleryPage />;
-};
+}; 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<KawaiiWebsite />);
 
-export default KawaiiWebsite;
