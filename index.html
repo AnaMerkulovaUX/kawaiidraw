@@ -51,19 +51,19 @@ const IconExternal = () => (
 
         const Kawaiicloud = ({ className = "" }) => (
             <div className={`text-white ${className}`}>
-                <cloud size={40} fill="currentColor" />
+                ☁️
             </div>
         );
 
         const Kawaiistar = ({ className = "" }) => (
             <div className={`text-yellow-300 ${className}`}>
-                <star size={20} fill="currentColor" />
+                ⭐
             </div>
         );
 
         const KawaiiSparkle = ({ className = "" }) => (
             <div className={`text-pink-400 ${className}`}>
-                <sparkles size={16} />
+                ✨
             </div>
         );
 
@@ -283,10 +283,20 @@ const IconExternal = () => (
                         </div>
                     </div>
                 );
-            }};
+            };
 
-            const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<KawaiiWebsite />);
-        </script>
-    </body>
+            return (
+                <div>
+                    {currentPage === 'main' ? <MainPage /> : <GalleryPage />}
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<KawaiiWebsite />);
+    </script>
+    <script>
+        // Initialize any third-party libraries or additional functionality here
+    </script>
+</body>
 </html>
