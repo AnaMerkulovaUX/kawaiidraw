@@ -288,7 +288,8 @@ const IconExternal = () => (
                 );
             }};
 
-            ReactDOM.render(<KawaiiWebsite />, document.getElementById('root'));
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<KawaiiWebsite />);
         </script>
     </body>
 </html>
