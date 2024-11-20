@@ -70,109 +70,110 @@ const IconExternal = () => (
         const KawaiiWebsite = () => {
             const [currentPage, setCurrentPage] = useState('main');
             const [selectedimage, setSelectedimage] = useState(null);
-
             const MainPage = () => (
-                <div className="min-h-screen bg-gradient-to-b from-pink-50 to-blue-50 overflow-hidden">
-                    <div className="fixed inset-0 pointer-events-none">
-                        <FloatingElement delay="0s">
-                            <Kawaiicloud className="absolute top-20 left-[10%]" />
-                        </FloatingElement>
-                        <FloatingElement delay="0.5s">
-                            <Kawaiicloud className="absolute top-40 right-[15%]" />
-                        </FloatingElement>
-                        <Kawaiistar className="absolute top-[15%] left-[20%]" />
-                        <Kawaiistar className="absolute top-[25%] right-[25%]" />
-                        <KawaiiSparkle className="absolute top-[30%] left-[30%]" />
-                    </div>
-
-                    <div className="relative max-w-6xl mx-auto px-4">
-                        <div className="absolute left-0 top-20 hidden lg:flex flex-col gap-4 items-center w-24">
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-200 to-pink-300 flex items-center justify-center">
-                                <div className="text-2xl">^.^</div>
-                            </div>
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
-                                <div className="text-2xl">:3</div>
-                            </div>
+                <>
+                    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-blue-50 overflow-hidden">
+                        <div className="fixed inset-0 pointer-events-none">
+                            <FloatingElement delay="0s">
+                                <Kawaiicloud className="absolute top-20 left-[10%]" />
+                            </FloatingElement>
+                            <FloatingElement delay="0.5s">
+                                <Kawaiicloud className="absolute top-40 right-[15%]" />
+                            </FloatingElement>
+                            <Kawaiistar className="absolute top-[15%] left-[20%]" />
+                            <Kawaiistar className="absolute top-[25%] right-[25%]" />
+                            <KawaiiSparkle className="absolute top-[30%] left-[30%]" />
                         </div>
 
-                        <div className="absolute right-0 top-40 hidden lg:flex flex-col gap-4 items-center w-24">
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-200 to-yellow-300 flex items-center justify-center">
-                                <div className="text-2xl">UwU</div>
-                            </div>
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center">
-                                <div className="text-2xl">★</div>
-                            </div>
-                        </div>
-
-                        <main className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8 my-8 mx-auto max-w-4xl">
-                            <div className="mb-12">
-                <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg">
-                    <iframe
-                        className="absolute inset-0 w-full h-full"
-                        src="https://youtu.be/GJTltOnuomE"
-                        title="Kawaii Drawing Tutorial"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                </div>
-                <p className="text-center mt-4 text-gray-600">✨ Video ✨</p>
-            </div>
-                            <div className="relative">
-                                <KawaiiSparkle className="absolute -top-4 left-1/4" />
-                                <KawaiiSparkle className="absolute -top-4 right-1/4" />
-                                <h1 className="text-4xl font-bold text-center text-pink-600 mb-12">
-                                    Kawaii Drawing Corner <span className="text-2xl">ʕ•ᴥ•ʔ</span>
-                                </h1>
+                        <div className="relative max-w-6xl mx-auto px-4">
+                            <div className="absolute left-0 top-20 hidden lg:flex flex-col gap-4 items-center w-24">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-200 to-pink-300 flex items-center justify-center">
+                                    <div className="text-2xl">^.^</div>
+                                </div>
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                                    <div className="text-2xl">:3</div>
+                                </div>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-8 h-8 text-pink-500">▶️</div>
-                                        <h2 className="text-2xl font-semibold text-gray-800">Animated Kawaii in Procreate</h2>
+                            <div className="absolute right-0 top-40 hidden lg:flex flex-col gap-4 items-center w-24">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-200 to-yellow-300 flex items-center justify-center">
+                                    <div className="text-2xl">UwU</div>
+                                </div>
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center">
+                                    <div className="text-2xl">★</div>
+                                </div>
+                            </div>
+
+                            <main className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8 my-8 mx-auto max-w-4xl">
+                                <div className="mb-12">
+                                    <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+                                        <iframe
+                                            className="absolute inset-0 w-full h-full"
+                                            src="https://www.youtube.com/embed/0pKXa2frr8c?si=UdJKNX5wDCxx9iyh"
+                                            title="Kawaii Drawing Tutorial"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                        ></iframe>
                                     </div>
-                                    <p className="text-gray-600">Watch tutorials on creating adorable animated characters!</p>
-                                </Card>
+                                    <p className="text-center mt-4 text-gray-600">✨ Video ✨</p>
+                                </div>
+                                <div className="relative">
+                                    <KawaiiSparkle className="absolute -top-4 left-1/4" />
+                                    <KawaiiSparkle className="absolute -top-4 right-1/4" />
+                                    <h1 className="text-4xl font-bold text-center text-pink-600 mb-12">
+                                        Kawaii Drawing Corner <span className="text-2xl">ʕ•ᴥ•ʔ</span>
+                                    </h1>
+                                </div>
 
-                                <button 
-                                    onClick={() => setCurrentPage('gallery')}
-                                    className="block w-full text-left"
-                                >
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className="w-8 h-8 text-blue-500">🖼️</div>
-                                            <h2 className="text-2xl font-semibold text-gray-800">My Drawings</h2>
+                                            <div className="w-8 h-8 text-pink-500">▶️</div>
+                                            <h2 className="text-2xl font-semibold text-gray-800">Animated Kawaii in Procreate</h2>
                                         </div>
-                                        <p className="text-gray-600">Check out my kawaii art gallery! ✨</p>
+                                        <p className="text-gray-600">Watch tutorials on creating adorable animated characters!</p>
                                     </Card>
-                                </button>
 
-                                <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-8 h-8 text-green-500">✏️</div>
-                                        <h2 className="text-2xl font-semibold text-gray-800">Getting started</h2>
-                                    </div>
-                                    <p className="text-gray-600">Everything you need to begin your kawaii art journey!</p>
-                                </Card>
+                                    <button 
+                                        onClick={() => setCurrentPage('gallery')}
+                                        className="block w-full text-left"
+                                    >
+                                        <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <div className="w-8 h-8 text-blue-500">🖼️</div>
+                                                <h2 className="text-2xl font-semibold text-gray-800">My Drawings</h2>
+                                            </div>
+                                            <p className="text-gray-600">Check out my kawaii art gallery! ✨</p>
+                                        </Card>
+                                    </button>
 
-                                <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-8 h-8 text-purple-500">📚</div>
-                                        <h2 className="text-2xl font-semibold text-gray-800">Step-by-Step Tutorials</h2>
-                                    </div>
-                                    <p className="text-gray-600">Learn to draw cute characters! (⌒‿⌒)</p>
-                                </Card>
-                            </div>
+                                    <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="w-8 h-8 text-green-500">✏️</div>
+                                            <h2 className="text-2xl font-semibold text-gray-800">Getting started</h2>
+                                        </div>
+                                        <p className="text-gray-600">Everything you need to begin your kawaii art journey!</p>
+                                    </Card>
 
-                            <div className="flex justify-center mt-12 gap-2">
-                                <KawaiiSparkle />
-                                <IconIconHeart />
-                                <KawaiiSparkle />
-                            </div>
-                        </main>
+                                    <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="w-8 h-8 text-purple-500">📚</div>
+                                            <h2 className="text-2xl font-semibold text-gray-800">Step-by-Step Tutorials</h2>
+                                        </div>
+                                        <p className="text-gray-600">Learn to draw cute characters! (⌒‿⌒)</p>
+                                    </Card>
+                                </div>
+
+                                <div className="flex justify-center mt-12 gap-2">
+                                    <KawaiiSparkle />
+                                    <IconIconHeart />
+                                    <KawaiiSparkle />
+                                </div>
+                            </main>
+                        </div>
                     </div>
-                </div>
+                </>
             );
 
             const GalleryPage = () => {
